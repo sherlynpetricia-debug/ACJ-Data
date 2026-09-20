@@ -1,0 +1,347 @@
+/* =========================================================
+   1. PAGE SETUP
+   ========================================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+	color: #202020;
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.65;
+}
+
+/* Main story column */
+.story {
+	width: min(100% - 40px, 860px);
+	margin: 0 auto;
+	padding: 64px 0 80px;
+}
+
+/* =========================================================
+   2. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	max-width: 820px;
+	margin-bottom: 24px;
+	font-size: clamp(3rem, 8vw, 6.6rem);
+	line-height: 0.94;
+	letter-spacing: -0.055em;
+	font-weight: 700;
+}
+
+h2 {
+	margin-bottom: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.35rem;
+	line-height: 1.25;
+}
+
+p {
+	margin-bottom: 20px;
+	font-size: 1.13rem;
+}
+
+.dek {
+	max-width: 720px;
+	margin-bottom: 24px;
+	font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+	line-height: 1.4;
+}
+
+.byline,
+.eyebrow,
+figcaption,
+.chart-intro,
+.story-footer,
+.methodology {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.byline {
+	margin: 0;
+	color: #666666;
+	font-size: 0.98rem;
+}
+
+.eyebrow {
+	margin-bottom: 8px;
+	color: #b43b36;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.lead {
+	font-size: 1.3rem;
+	line-height: 1.55;
+}
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+
+.story-header {
+	margin-bottom: 42px;
+	padding-bottom: 36px;
+	border-bottom: 1px solid #dddddd;
+}
+
+/* =========================================================
+   4. HERO IMAGE
+   ========================================================= */
+
+.hero {
+	margin: 0 0 52px;
+}
+
+.hero-placeholder {
+	display: block;
+	width: 100%;
+	height: auto;
+	background: #eeeeee;
+}
+
+.svg-label {
+	fill: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+
+figcaption {
+	margin-top: 9px;
+	color: #6b6b6b;
+	font-size: 0.83rem;
+	line-height: 1.45;
+}
+
+/* If students later use a normal image tag, this keeps it responsive. */
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* =========================================================
+   5. STORY SECTIONS
+   ========================================================= */
+
+.story-section,
+.chart-section,
+.methodology,
+.callout {
+	margin: 50px 0;
+}
+
+.intro {
+	max-width: 760px;
+}
+
+.section-heading {
+	max-width: 720px;
+	margin-bottom: 18px;
+}
+
+.chart-intro {
+	max-width: 720px;
+	color: #444444;
+	font-size: 1rem;
+}
+
+/* =========================================================
+   6. CHART
+   ========================================================= */
+
+.chart-figure {
+	margin: 30px 0 26px;
+}
+
+.dummy-chart {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 16px 0 8px;
+	overflow: visible;
+}
+
+.axis {
+	stroke: #777777;
+	stroke-width: 1.5;
+}
+
+.grid {
+	stroke: #e6e6e6;
+	stroke-width: 1;
+}
+
+.trend-line {
+	fill: none;
+	stroke: #b43b36;
+	stroke-width: 5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.chart-point {
+	fill: #b43b36;
+}
+
+.chart-text,
+.annotation {
+	fill: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+}
+
+.annotation {
+	fill: #202020;
+	font-weight: 700;
+}
+
+/* =========================================================
+   7. REPORTING QUESTION CALLOUT
+   ========================================================= */
+
+.callout {
+	padding: 28px 0;
+	border-top: 3px solid #202020;
+	border-bottom: 1px solid #dddddd;
+}
+
+.callout-text {
+	max-width: 760px;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+	line-height: 1.4;
+}
+
+/* =========================================================
+   8. WHAT THE DATA SHOWS / DOES NOT SHOW
+   ========================================================= */
+
+.evidence-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 36px;
+	padding: 34px 0;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.evidence-grid p {
+	margin-bottom: 0;
+	font-size: 1rem;
+}
+
+/* =========================================================
+   9. METHODOLOGY
+   ========================================================= */
+
+.methodology {
+	padding: 30px;
+	background: #f6f6f6;
+	border-left: 4px solid #b43b36;
+}
+
+.methodology p:last-child {
+	margin-bottom: 0;
+	font-size: 0.98rem;
+}
+
+/* =========================================================
+   10. LINKS + FOOTER
+   ========================================================= */
+
+a {
+	color: #9c2f2b;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+
+a:hover {
+	color: #202020;
+}
+
+.story-footer {
+	margin-top: 58px;
+	padding-top: 22px;
+	border-top: 1px solid #dddddd;
+	color: #5e5e5e;
+}
+
+.story-footer p {
+	margin-bottom: 8px;
+	font-size: 0.9rem;
+}
+
+/* =========================================================
+   11. MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+	.story {
+		width: min(100% - 32px, 860px);
+		padding-top: 38px;
+	}
+
+	.story-header {
+		margin-bottom: 30px;
+		padding-bottom: 28px;
+	}
+
+	h1 {
+		font-size: clamp(3rem, 16vw, 4.6rem);
+	}
+
+	.dek {
+		font-size: 1.18rem;
+	}
+
+	p,
+	.lead {
+		font-size: 1rem;
+	}
+
+	.hero {
+		margin-bottom: 40px;
+	}
+
+	.story-section,
+	.chart-section,
+	.methodology,
+	.callout {
+		margin: 40px 0;
+	}
+
+	.evidence-grid {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.callout-text {
+		font-size: 1.25rem;
+	}
+
+	.methodology {
+		padding: 22px;
+	}
+}
